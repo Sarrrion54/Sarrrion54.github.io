@@ -1,10 +1,11 @@
-td, th{
+
+.black1{
+backgronud-color: #000000;
  width:  100px;
  height: 100px;
 }
-.black1{
-backgronud-color: #000000;
-}
 .white1{
 backgronud-color: #FFFFFF;
+ width:  100px;
+ height: 100px;
 }
