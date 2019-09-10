@@ -1,18 +1,27 @@
 td, th{
-width: 500px;
-height: 100px;
-font-weight: 800;
-font-size: 250%;
-text-align: center;
-background-color: #DCDCDC;
+ width: 500px;
+ height: 100px;
+ font-weight: 800;
+ font-size: 250%;
+ text-align: center;
+ opacity: 0.7;
+ background-color: #DCDCDC;
 }
 
 .tdcolor{
- background-color:#F08080; 
+  background-color:#F08080; 
 }
 .feb1{
- background-color:#F08080; 
- background-image: url(звезда.jpg);
- background-repeat: no-repeat;
- background-size: cover;
+  background-color:#F08080; 
+  background-image: url(звезда.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+ .back1{
+   background-image: url(февраль.jpeg);
+   background-position: center center; 
+   background-repeat: no-repeat;  
+   background-attachment: fixed;   
+   background-size: cover;
+   background-color: #464646;
+            }
