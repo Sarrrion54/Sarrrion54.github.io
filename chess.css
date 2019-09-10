@@ -3,8 +3,8 @@ td, th{
  height: 100px;
 }
 .black1{
-backgronud: #000000;
+backgronud-color: #000000;
 }
 .white1{
-backgronud: #FFFFFF;
+backgronud-color: #FFFFFF;
 }
