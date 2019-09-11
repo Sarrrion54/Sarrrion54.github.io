@@ -1,6 +1,7 @@
 td, th{
- width: 100px;
- height: 100px;
+ border: 4px inset black;
+ width: 5%;
+ height: 5%;
  font-weight: 800;
  font-size: 250%;
  text-align: center;
@@ -16,10 +17,12 @@ td, th{
   background-size: cover;
 }
  .back1{
-   border: 4px inset black;
+   
    border-collapse: collapse;
    background-image: url(февраль.jpeg);
-   object-fit: cover;
+   width: 25%; 
+   height: 35%; 
+   margin: 0; 
    opacity: 0.7;
    background-position: center center; 
    background-repeat: no-repeat;  
@@ -27,6 +30,7 @@ td, th{
    background-size: cover;
    background-color: #464646;
    border-collapse: collapse;
+   object-fit: cover;
             }
 
 .black1{
