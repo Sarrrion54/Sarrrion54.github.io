@@ -1,12 +1,12 @@
-th,td{
-  opacity: 0.4;
-}
+
 .black1{
+   opacity: 0.4;
  background: #696969;
  width:  100px;
  height: 100px;
 }
 .white1{
+   opacity: 0.4;
  background: #D3D3D3;
  width:  100px;
  height: 100px;
