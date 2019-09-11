@@ -1,10 +1,10 @@
 .black1{
- bgcolor: #000000;
+ background: #000000;
  width:  100px;
  height: 100px;
 }
 .white1{
- bgcolor: #FFFFFF;
+ background: #FFFFFF;
  width:  100px;
  height: 100px;
 }
