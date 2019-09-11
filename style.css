@@ -5,7 +5,6 @@ td, th{
  font-size: 250%;
  text-align: center;
  opacity: 0.7;
- background-color: #DCDCDC;
 }
 
 .tdcolor{
@@ -27,12 +26,12 @@ td, th{
             }
 
 .black1{
- color: #000000;
+ bgcolor: #000000;
  width:  100px;
  height: 100px;
 }
 .white1{
- color: #FFFFFF;
+ bgcolor: #FFFFFF;
  width:  100px;
  height: 100px;
 }
