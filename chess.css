@@ -1,1 +1,10 @@
-
+.black1{
+ bgcolor: #000000;
+ width:  100px;
+ height: 100px;
+}
+.white1{
+ bgcolor: #FFFFFF;
+ width:  100px;
+ height: 100px;
+}
