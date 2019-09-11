@@ -1,27 +1,11 @@
 
 .black1{
-   opacity: 0.4;
  background: #696969;
  width:  100px;
  height: 100px;
 }
 .white1{
-   opacity: 0.4;
  background: #D3D3D3;
  width:  100px;
  height: 100px;
-}
-.bk1{
- background-image: url(Сурмин.jpeg);
-   width: 100%; 
-   height: 400px; 
-   margin: 0; 
-   opacity: 0.7;
-   background-position: center center; 
-   background-repeat: no-repeat;  
-   background-attachment: fixed;   
-   background-size: cover;
-   background-color: #464646;
-   border-collapse: collapse;
-   object-fit: cover;
 }
