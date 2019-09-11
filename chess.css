@@ -8,3 +8,12 @@
  width:  100px;
  height: 100px;
 }
+.bk1{
+ background-image: url(Сурмин.jpg);
+                background-position: center center; 
+                background-repeat: no-repeat;  
+                background-attachment: fixed;   
+                background-size: cover;
+                background-color: #464646;
+ opacity: 0.7;
+}
