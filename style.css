@@ -16,7 +16,8 @@ td, th{
   background-size: cover;
 }
  .back1{
-   
+   margin-left:10%;
+   margin-right:10%;
    border-collapse: collapse;
    background-image: url(февраль.jpeg);
    width: 100%; 
