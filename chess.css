@@ -12,6 +12,7 @@
 .deg1{
 -webkit-transform: rotate(180deg);
  border: 4px inset Gold;
+ font-size: 10px;
 }
 .bord1{
  border: 4px inset Gold;
