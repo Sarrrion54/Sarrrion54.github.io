@@ -6,7 +6,8 @@
               margin-right: 10px;
               width: 21%;
               opacity: 0.7;
- 	  background: #FFFFFF; 
+ 	  background: #FFFFFF;
+              align: right;
               
             }
             .css1{
@@ -17,7 +18,8 @@
               margin-right: 1px;
               width: 21%;
               opacity: 0.7;
- 	  background: #FFFFFF; 
+ 	  background: #FFFFFF;
+                        align: right;
             }
             .java1{
               float: right;
@@ -27,7 +29,8 @@
               margin-right: 250px;
               width: 21%;
               opacity: 0.7;
- 	  background: #FFFFFF; 
+ 	  background: #FFFFFF;
+                        align: right;
             } 
             .php1{
               float: left;
@@ -38,6 +41,7 @@
               width: 21%;
               opacity: 0.7;
  	  background: #FFFFFF;
+                        align: right;
               }
             .back1{
                 background-image: url(Фон.png);
