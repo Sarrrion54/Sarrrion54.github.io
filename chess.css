@@ -9,3 +9,6 @@
  width:  100px;
  height: 100px;
 }
+.deg1{
+-webkit-transform: rotate(180deg);
+}
