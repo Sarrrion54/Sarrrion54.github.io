@@ -11,4 +11,8 @@
 }
 .deg1{
 -webkit-transform: rotate(180deg);
+ border: 4px inset Gold;
+}
+.bord1{
+ border: 4px inset Gold;
 }
