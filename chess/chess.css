@@ -27,4 +27,8 @@
    background-attachment: fixed;   
    background-size: cover;
 }
+.tab1{
+  border: 4px inset Gold;
+  background-color: #FFD700
+}
               
