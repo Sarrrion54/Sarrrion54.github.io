@@ -6,3 +6,10 @@ body{
       background-size: cover;
       background-color: #464646;
 }
+.Australia1{
+      background-image: url(Австралия.jpg);
+      background-position: right; 
+      background-repeat: no-repeat;  
+      background-attachment: fixed;   
+      background-size: cover; 
+}
