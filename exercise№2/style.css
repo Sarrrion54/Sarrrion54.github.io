@@ -1,15 +1,20 @@
 body{
-      background-image: url(ФонАвстралии.jpg);
-      background-position: center center; 
-      background-repeat: no-repeat;  
-      background-attachment: fixed;   
-      background-size: cover;
-      background-color: #464646;
+    background-image: url(BackgroundAustralia.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-.Australia1{
-      background-image: url(Австралия.jpg);
-      background-position: right; 
-      background-repeat: no-repeat;  
-      background-attachment: fixed;   
-      background-size: cover; 
+h1 {
+   font-size: 40px;
+}
+.border1{
+    font: italic 30px "Arial",serif;
+    border: 2px solid Black;
+    padding: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0.7;
+    background: #FFFFFF;
+    text-align: center;
 }
