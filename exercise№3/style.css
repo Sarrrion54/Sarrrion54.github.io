@@ -1,0 +1,39 @@
+.text1
+{
+    background-color: #d3f1ff;
+    font-family: Bradley Hand, cursive;
+    font-style: italic;
+    font-size: 50px;
+    text-indent: 6em;
+    color: Black;
+}
+.text2
+{
+    background-color: #2817ff;
+    font-family: Snell Roundhand;
+    font-style: italic;
+    font-size: 70px;
+    text-indent:10em;
+    color: #faf518;
+}
+.text3
+{
+    background-color: #ff0f03;
+    font-family: Trattatello, fantasy;
+    font-style: italic;
+    font-size: 90px;
+    text-indent: 14em;
+    color: #1bfadb;
+}
+.text1:hover
+{
+    background-color: #8eff96;
+}
+.text2:hover
+{
+    background-color: #fffa1c;
+}
+.text3:hover
+{
+    background-color: #ff7193;
+}
