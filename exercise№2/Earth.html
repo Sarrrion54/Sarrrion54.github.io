@@ -4,6 +4,15 @@
         <title>Австралия</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            $('a[href^="#"]').click(function() 
+            {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                $('html').animate({scrollTop: destination}, 1000);
+                return false;
+            });
+        </script>
     </head>
         <body>
             <img src ="Australia.png" height="1000" width="1100" align="center" usemap="#Australia">
