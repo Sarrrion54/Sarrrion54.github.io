@@ -30,7 +30,7 @@ th:nth-child(1){
     background-color: #eed774;
     border: 5px #100977 solid;
 }
-p1{
+p.size2{
     font-size: 50px;
 }
 p{
