@@ -4,43 +4,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Сундук с сокровищем</title>
-    <style>
-        .pol{
-           // position: absolute;
-                float: right;
-        }
-        .polleft{
-            float: left;
-        }
-        .polbottom{
-            float: bottom;
-        }
-        </style>
 </head>
 <body >
-<div class="page_style">
-    <a href="#page"><span style="font-size: 100pt">Ссылка один:</span></a>
-    <a href="#calend"><span style="font-size: 100pt">Ссылка два:</span></a>
-</div>
+    <div class="p1"><a href="#page">Ссылка один:</a></div>
+    <div class="p2"><a href="#calend">Ссылка два:</a></div>
+    <div class="p3"><a href="#page1">Ссылка три:</a></div>
     <div class="pageBox" id="page">
+        <br><br><br><br>
         <div class="page_style">
-            <div class="size3 polleft">
-                <span>Я есть Грут</span>
-                <br>
-                <img src="Грут.png" alt="Грут">
-            </div>
-            <div class="size3 pol">
-                <span>Я есть Стив Роджерс</span>
-                <br>
-                <img src="Стив%20Роджерс.png" alt="СтивРоджерс">
-            </div>
-            <div class="polbottom">
-            <a href=""><span>Закрыть</span></a>
-            </div>
+                <p class="size">Я есть Грут</p>
+                    <img src="Грут.png" alt="Грут">
+            <a href=""><p class="size">Закрыть</p></a>
         </div>
     </div>
     <div class="calendBox" id="calend">
-        <table style="margin-left: 30%">
+        <br><br><br><br>
+        <div class="calend_style">
+        <table align="center">
             <caption><h1>Таблица Пифагора</h1></caption>
             <tr>
                 <th></th>
@@ -186,8 +166,17 @@
                 <td>100</td>
             </tr>
         </table>
-        <a href=""><h1>Закрыть</h1></a>
+            <a href=""><p class="size">Закрыть</p></a>
+        </div>
     </div>
-</div>
+    <div class="page1Box" id="page1">
+        <br><br><br><br>
+        <div class="page1_style">
+            <p class="size">Здравствуйте, друзья. Я наконец-то сделал эту лабу. Жду ваших аплодисментов</p>
+            <img src="Аплодисменты.gif" alt="Аплодисменты">
+            <br>
+            СПАСИБО!
+        </div>
+    </div>
 </body>
 </html>
