@@ -1,14 +1,12 @@
 body{
     background-color: indianred;
 }
-table{
-    font-size: 50px;
-    border-spacing: 0;
-}
 td, th{
     border: 2px groove lightseagreen;
     text-align: center;
     width: 50px;
+    font-size: 50px;
+    border-spacing: 0;
 }
 tr:nth-child(even) {
     background-color: Black;
@@ -26,28 +24,45 @@ th:nth-child(1){
     background-color: #0e1466;
     color: #f5ff09;
 }
-.page_style {
-    background-color: #eed774;
-    border: 5px #100977 solid;
-}
-p.size2{
-    font-size: 50px;
-}
-p{
-    font-family: Snell Roundhand, cursive;
-    font-size: 30px;
-}
 img{
     width: 400px;
-    height: 500px;
+    height: 800px;
+    margin-left: 10%;
 }
-p:first-letter{
+.p1
+{
+    font-size: 50px;
+    margin-left: 8%;
+    float: left;
+}
+.p2
+{
+    font-size: 50px;
+    float: left;
+    margin-left: 20%;
+}
+.p3
+{
+    font-size: 50px;
+    float: left;
+    margin-left: 20%;
+}
+p.size
+{
+    font-family: Snell Roundhand, cursive;
+    font-size: 50px;
+    text-align: center;
+}
+p:first-letter
+{
     font-family: Impact;
     font-size: 100px;
     color: navy;
 }
-p.size1{
-    font-size: 30px;
+.page_style {
+    background-color: #eed774;
+    border: 5px #100977 solid;
+    width: 30%;
 }
 .pageBox {
     display: none;
@@ -55,16 +70,30 @@ p.size1{
 .pageBox:target {
     display: block;
 }
-.calend_style{
+.calend_style
+{
     background-color: #eed774;
     border: 5px #772f12 solid;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
 }
-.calendBox{
+.calendBox
+{
     display: none;
 }
-.calendBox:target{
+.calendBox:target
+{
     display: block;
 }
-.col{
-    background-color: indianred;
+.page1Box {
+    display: none;
+}
+.page1Box:target {
+    display: block;
+}
+.page1_style {
+    background-color: #eed774;
+    border: 5px #100977 solid;
+    margin-left: 70%;
 }
