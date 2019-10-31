@@ -14,6 +14,16 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+ol{
+    counter-reset: myCounter;
+}
+ol li{
+    list-style: none;
+}
+ol li::before{
+    counter-increment: myCounter;
+    content: "Вопрос № " counters(myCounter, ".");
+}
 .back {
     border: 2px solid Black;
     font: italic 30px "Arial", serif;
@@ -33,13 +43,13 @@ input[type="checkbox"] {
     margin-top: -2px;
     margin-right: 10px;
 }
-input[type="submit"] {
-    width: 220px;
-    height: 50px;
-    font-size: 20px;
-}
 input[type="text"]{
     height: 40px;
+    font-size: 30px;
+}
+input[type="button"]{
+    width: 400px;
+    height: 60px;
     font-size: 30px;
 }
 .modal {
