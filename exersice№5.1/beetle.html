@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,94 +8,131 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Тест</title>
     <script>
-        function proverka()
-        {
-            const a =[{value: "Coleoptera"}, {value: "Жук-титан"}, {value: "Cockroach"}, {value: "The Beetles"}, {value: "Roisterer"},    ];
+        let array_of_correct_answers = ['Coleoptera', 'Жук-титан', 'Cockroach', 'The Beetles', 'Hawker', 'Lumberjack titanium', 'Carnivorous', 'Omnivores', 'Numerous', 'Bronze', 'Плавунец'];
+        let numner_questions = 10;
+        let a = [];
+        function proverka(j = 0) {
+            let elements = document.getElementsByName(j);
+            for (let i = 0, len = elements.length; i < len; ++i) {
+                if(elements[i].type=="text")
+                    a.push(elements[i].value);
+                if (elements[i].checked)
+                    a.push(elements[i].value);
+            }
+            j++;
+            if (j < numner_questions)
+                proverka(j);
+            return a;
+        }
+        function cout() {
+            let n = 0;
+            let p = proverka();
+             if (p.length < numner_questions) {
+              alert("Ответьте на все вопросы")
+             }
+             else {
+            for (let i = 0; i < numner_questions; i++) {
+                if (p[i] == array_of_correct_answers[i]) {
+                    n++;
+                }
+            }
+            document.getElementById('id01').style.display = 'block'
+            document.getElementById("sss").innerHTML = "Првильных ответов: " + n;
+             }
         }
     </script>
 </head>
+
 <body>
-<div class="back">
-    <h1>Тест</h1>
-    <h2>Насколько хорошо вы знаете жуков?</h2>
-    Вопрос №1 К какому отряду насекомых относятся жуки?
-    <form id="a1">
-        <input type="radio" name="Beetle" value="Dipterous" />Двукрылые<br />
-        <input type="radio" name="Beetle" value="Coleoptera" />Жесткокрылые<br />
-        <input type="radio" name="Beetle" value="Orthoptera" />Прямокрылые<br />
-    </form>
-    Вопрос №2 Какой жук является самым крупным в мире?
-    <form id="a2">
-        <input type="text" name="Beetle" /><br />
-    </form>
-    Вопрос №3 Кто из этих насекомых по науке не является жуком?
-    <form id="a3">
-        <input type="radio" name="Beetle" value="Ladybug" />Божья коровка<br />
-        <input type="radio" name="Beetle" value="Water beetle" />Плавунец<br />
-        <input type="radio" name="Beetle" value="Cockroach" />Таракан<br />
-    </form>
-    Вопрос №4 Какая из этих музыкальных групп относится к жукам?
-    <form id="a4">
-        <input type="radio" name="Beetle" value="The Prodigy" />The Prodigy<br />
-        <input type="radio" name="Beetle" value="The Beetles" />The Beetles<br />
-        <input type="radio" name="Beetle" value="The Rasmus" />The Rasmus<br />
-    </form>
-    Вопрос №5 Какое семейство не является семейством жуков?
-    <form id="a5">
-        <input type="radio" name="Beetle" value="Ground beetle" />Жужелицы<br />
-        <input type="radio" name="Beetle" value="Tree eater" />Древоед<br />
-        <input type="radio" name="Beetle" value="Roisterer" />Бражник<br />
-        <input type="radio" name="Beetle" value="Barbel" />Усач<br />
-    </form >
-    Вопрос №6 Личинки какого жука до сих пор остаются неизвестными?
-    <form id="a6">
-        <input type="radio" name="Beetle" value="Goliath" />Голиаф<br />
-        <input type="radio" name="Beetle" value="Barbel carpenter" />Усач-плотник<br />
-        <input type="radio" name="Beetle" value="Lumberjack-titanium" />Дровосек-титан<br />
-    </form>
-    Вопрос №7 На какие два подотряда делятся жуки?
-    <form id="a7">
-        <input type="checkbox" name="Beetle" value="Poisonous" />Ядовитые<br />
-        <input type="checkbox" name="Beetle" value="Carnivorous" />Плотоядные<br />
-        <input type="checkbox" name="Beetle" value="Non-poisonous" />Неядовитые<br />
-        <input type="checkbox" name="Beetle" value="Omnivores" />Разноядные<br />
-        <input type="checkbox" name="Beetle" value="Coleoptera" />Жёсткокрылые<br />
-        <input type="checkbox" name="Beetle" value="Hemiptera" />Полужёсткокрылые<br />
-        <input type="checkbox" name="Beetle" value="Biter" />Кусачие<br />
-        <input type="checkbox" name="Beetle" value="Non-biting" />Некусачие<br />
-    </form>
-    Вопрос №8 Отряд жуков среди насекомых является самым...
-    <form id="a8">
-        <input type="radio" name="Beetle" value="Numerous" />Многочисленным<br />
-        <input type="radio" name="Beetle" value="Scanty" />Малочисленным<br />
-        <input type="radio" name="Beetle" value="Hardworking" />Трудолюбивым<br />
-        <input type="radio" name="Beetle" value="Strong" />Сильным<br />
-    </form>
-    Вопрос №9 Какое семейство жуков питается растениями?
-    <form id="a9">
-        <input type="radio" name="Beetle" value="Water beetle" />Плавунцы<br />
-        <input type="radio" name="Beetle" value="Chafer" />Бронзовки<br />
-        <input type="radio" name="Beetle" value="Softies" />Мягкотелки<br />
-    </form>
-    Вопрос №10 Какое название у этого жука?
-    <form id="a10">
-        <br />
-        <img class="guk" src="Beetle.png" /><br />
-        <br />
-        <input type="text" name="Beetle" /><br />
-    </form>
-    <input
-            type="submit"
-            value="Посмотреть результат"
-            onclick="document.getElementById('id01').style.display = 'block'"
-    />
-</div>
-<div id="id01" class="modal">
-    <a href="" class="closebtn">×</a>
-    <div class="container">
-        <h2>Результат</h2>
-        <p>Тут должна быть циферка с результатом и какой результат</p>
+    <div class="back">
+        <h1>Тест</h1>
+        <h2>Насколько хорошо вы знаете жуков?</h2>
+        <ol>
+       <li>  К какому отряду насекомых относятся жуки?
+        <form id="a2">
+            <input type="radio" name="0" value="Dipterous" >Двукрылые<br>
+            <input type="radio" name="0" value="Coleoptera">Жесткокрылые<br>
+            <input type="radio" name="0" value="Orthoptera">Прямокрылые<br>
+        </form>
+        </li>
+        <li> Какой жук является самым крупным в мире?
+        <form id="a">
+            <input type="text" name="1" ><br>
+        </form>
+        </li>
+        <li> Кто из этих насекомых по науке не является жуком?
+        <form id="a3">
+            <input type="radio" name="2" value="Ladybug">Божья коровка<br>
+            <input type="radio" name="2" value="Water beetle">Плавунец<br>
+            <input type="radio" name="2" value="Cockroach">Таракан<br>
+        </form>
+    </li>
+        <li> Какая из этих музыкальных групп относится к жукам?
+        <form id="a4">
+            <input type="radio" name="3" value="The Prodigy">The Prodigy<br>
+            <input type="radio" name="3" value="The Beetles">The Beetles<br>
+            <input type="radio" name="3" value="The Rasmus">The Rasmus<br>
+        </form>
+        </li>
+        <li> Какое семейство не является семейством жуков?
+        <form id="a5">
+            <input type="radio" name="4" value="Ground beetle">Жужелицы<br>
+            <input type="radio" name="4" value="Tree eater">Древоед<br>
+            <input type="radio" name="4" value="Hawker">Бражник<br>
+            <input type="radio" name="4" value="Barbel">Усач<br>
+        </form>
+        </li>
+        <li> Личинки какого жука до сих пор остаются неизвестными?
+        <form id="a6">
+            <input type="radio" name="5" value="Goliath">Голиаф<br>
+            <input type="radio" name="5" value="Barbel carpenter">Усач-плотник<br>
+            <input type="radio" name="5" value="Lumberjack titanium">Дровосек-титан<br>
+        </form>
+        </li>
+        <li> На какие два подотряда делятся жуки?
+        <form id="a7">
+            <input type="checkbox" name="6" value="Poisonous">Ядовитые<br>
+            <input type="checkbox" name="6" value="Carnivorous">Плотоядные<br>
+            <input type="checkbox" name="6" value="Non-poisonous">Неядовитые<br>
+            <input type="checkbox" name="6" value="Omnivores">Разноядные<br>
+            <input type="checkbox" name="6" value="Coleoptera">Жёсткокрылые<br>
+            <input type="checkbox" name="6" value="Hemiptera">Полужёсткокрылые<br>
+            <input type="checkbox" name="6" value="Biter">Кусачие<br>
+        </form>
+        </li>
+       <li> Отряд жуков среди насекомых является самым...
+        <form id="a8">
+            <input type="radio" name="7" value="Numerous">Многочисленным<br>
+            <input type="radio" name="7" value="Scanty">Малочисленным<br>
+            <input type="radio" name="7" value="Hardworking" />Трудолюбивым<br>
+            <input type="radio" name="7" value="Strong">Сильным<br>
+        </form>
+        </li>
+        <li> Какое семейство жуков питается растениями?
+        <form id="a9">
+            <input type="radio" name="8" value="Water beetle">Плавунцы<br>
+            <input type="radio" name="8" value="Bronze">Бронзовки<br>
+            <input type="radio" name="8" value="Softies">Мягкотелки<br>
+        </form>
+        </li>
+        <li> Какое название у этого жука?
+        <form id="a10">
+            <br>
+            <img class="guk" src="Beetle.png" alt="Жук"><br>
+            <br>
+            <input type="text" name="9" value=""><br>
+        </form>
+        </li>
+        </ol>
+        <input type="button" value="Посмотреть результат" onclick="cout()">
+        <a  href="Вопросы.pdf"><h1>Тут файл с вопросами и ответами</h1></a>
     </div>
-</div>
+    <div id="id01" class="modal">
+        <a href="" class="closebtn">Закрыть</a>
+        <div class="container">
+            <p id="sss"></p>
+        </div>
+    </div>
+
 </body>
 </html>
