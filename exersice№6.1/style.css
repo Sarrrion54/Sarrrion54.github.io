@@ -1,0 +1,41 @@
+
+.border {
+    background-image: url("Stenka.jpg");
+}
+
+.player {
+    background-image: url("Maev.jpg");
+}
+
+.Victory {
+    background-image: url("Illidan.jpg");
+}
+
+.empty {
+    background-image: url("Doroga.jpg");
+}
+#exercise
+{
+    font-size: 30px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+td {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;  
+}
+body{
+    background-image: url("Fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
