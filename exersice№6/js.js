@@ -47,20 +47,32 @@ function cellMouseDown(e) {
     }
 
 }
+function CheckDrow()
+{
+    let myCells = document.getElementsByName('td');
+    let cellsNumber = myCells.length;
+    for(let i=0; i<cellsNumber; ++i)
+    {
+        if(myCells[i].cellStatus == "0")
+            return false;
+    }
+    return true;
+        
+}
 function CheckWin(row, cell, typeField) {
     let horizont = 1 + ChecDirection(row, cell, typeField, 0, -1) + ChecDirection(row, cell, typeField, 0, 1);
     let vertical = 1 + ChecDirection(row, cell, typeField, -1, 0) + ChecDirection(row, cell, typeField, 1, 0);
     let diagonalReducing = 1 + ChecDirection(row, cell, typeField, -1, -1) + ChecDirection(row, cell, typeField, 1, 1);
     let diagonalIncreasing = 1 + ChecDirection(row, cell, typeField, -1, 1) + ChecDirection(row, cell, typeField, 1, -1);
-    if (document.getElementsByName('td').style.backgroundImage != "")
-        document.getElementById("Cross").innerHTML = "Ничья";
-    else if (horizont >= WinCriteria || vertical >= WinCriteria || diagonalReducing >= WinCriteria || diagonalIncreasing >= WinCriteria) {
+     if (horizont >= WinCriteria || vertical >= WinCriteria || diagonalReducing >= WinCriteria || diagonalIncreasing >= WinCriteria) {
         if (typeField == "2")
             document.getElementById("Cross").innerHTML = "Победил Альянс";
         else if (typeField == "1")
             document.getElementById("Cross").innerHTML = "Победила Орда";
         document.getElementById("Table1").style.display = "none";
     }
+    else if (CheckDrow())
+        document.getElementById("Cross").innerHTML = "Ничья";
 }
 function ChecDirection(row, cell, typeField, directionRow, directionCell) {
     let currentRow = row + directionRow;
