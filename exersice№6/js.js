@@ -49,11 +49,11 @@ function cellMouseDown(e) {
 }
 function CheckDrow()
 {
-    let myCells = document.getElementsByName('td');
+    let myCells = document.querySelectorAll('td');
     let cellsNumber = myCells.length;
     for(let i=0; i<cellsNumber; ++i)
     {
-        if(myCells[i].cellStatus == "0")
+        if(myCells[i].cellStatus == 0)
             return false;
     }
     return true;
