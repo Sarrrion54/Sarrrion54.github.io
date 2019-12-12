@@ -40,11 +40,6 @@ body {
     height: 300px;
     float: left;
     margin: 7px 7px 7px 7px;
-    transition: 1s;
-}
-
-.vine:hover {
-    transform: scale(2);
 }
 
 .wine_field {
@@ -92,12 +87,7 @@ h2 {
         width: 400px;
         height: 300px;
         float: left;
-        transition: 0s;
     }    
-    .vine:hover {
-    transform: scale(0);
-}
-
     .wine_field {
         border: 1px solid maroon;
         border-radius: 0%;
