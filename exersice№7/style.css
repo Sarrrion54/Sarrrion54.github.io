@@ -92,7 +92,11 @@ h2 {
         width: 400px;
         height: 300px;
         float: left;
+        transition: 0s;
     }    
+    .vine:hover {
+    transform: scale(0);
+}
 
     .wine_field {
         border: 1px solid maroon;
