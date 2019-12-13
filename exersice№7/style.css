@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
+    padding-left: 10px;
 }
 
 .logo {
@@ -52,6 +53,8 @@ body {
     height: 700px;
     background-color: rgba(114, 47, 55, 0.7);
     font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .information {
@@ -107,8 +110,7 @@ h2 {
         margin-bottom: 20px;
         background-color: rgba(114, 47, 55, 0.7);
         font-size: 40px;
-        padding-left: 20px;
-        padding-right: 10px;
+        
     }
 
     .name_company {
@@ -149,8 +151,6 @@ h2 {
         height: 100%;
         background-color: rgba(114, 47, 55, 0.7);
         font-size: 25px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .name_company {
@@ -197,8 +197,6 @@ h2 {
         height: 100%;
         background-color: rgba(114, 47, 55, 0.7);
         font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .name_company {
