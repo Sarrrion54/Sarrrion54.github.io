@@ -155,15 +155,6 @@ h2 {
         width: 100%;
     }
 
-    .wine_field {
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        width: 100%;
-        font-size: 20px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-top: 3%;
-    }
 }
 
 @media screen and (max-width: 425px) {
@@ -202,18 +193,4 @@ h2 {
         margin-top: 15%;
     }
 
-    .main_information {
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    .wine_field {
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        width: 100%;
-        font-size: 20px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-top: 3%;
-    }
 }
