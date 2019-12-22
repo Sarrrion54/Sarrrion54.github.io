@@ -21,8 +21,9 @@ function myFunction(xml) {
         var WINE_GASTRONOMY = x[i].getElementsByTagName("GASTRONOMY")[0].childNodes[0].nodeValue;
         var WINE_VINEYARDS = x[i].getElementsByTagName("VINEYARDS")[0].childNodes[0].nodeValue;
         var WINE_EXTRACTION = x[i].getElementsByTagName("EXTRACTION")[0].childNodes[0].nodeValue;
+        var WINE_ID = x[i].getElementsByTagName("ANCHOR")[0].childNodes[0].nodeValue;
 
-        var vine = "<div class='wine_field'><br><h2 id='Chianti-Classico'>" + WINE_NAME +
+        var vine = "<div class='wine_field'><br><h2 id=" + WINE_ID + ">" + WINE_NAME +
             "</h2><br><p><img class='vine' src='" + WINE_IMG +
             "' alt='Chianti classico'><span class='information'>Стилистика вина:</span><br>"
             + WINE_STYLE + "<br><span class='information'>Дегустационные характеристики:</span><br>" +
