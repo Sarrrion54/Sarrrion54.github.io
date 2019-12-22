@@ -27,6 +27,9 @@
         <EXTRACTION>
             18 месяцев в дубовых бочках.
         </EXTRACTION>
+        <ANCHOR>
+            Chianti-Classico
+        </ANCHOR>
     </WINE>
      <WINE>
         <NAME>
@@ -52,6 +55,9 @@
         <EXTRACTION>
             12 месяцев в дубовых бочках из французского (75%) и американского (25%) дуба.
         </EXTRACTION>
+        <ANCHOR>
+            La-Montesa
+        </ANCHOR>
     </WINE>
      <WINE>
         <NAME>
@@ -81,5 +87,8 @@
         <EXTRACTION>
             В течение 12 месяцев в барриках.
         </EXTRACTION>
+        <ANCHOR>
+            Le-Difese
+        </ANCHOR>
     </WINE>
 </CATALOG>
