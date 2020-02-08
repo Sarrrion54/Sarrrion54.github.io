@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class = "inform">
+    <div>
+        <p>
+            Тип вина:
+        </p>
+        <input type="text">
+    </div>
+    <div>
+        <p>
+            Страна:
+        </p>
+        <input type="text">
+    </div>
+    <div>
+        <p>
+            Вид винограда:
+        </p>
+        <input type="text">
+    </div><br>
+    <div>
+        <button onclick="showHint('Здрасти')">Отправить</button>
+    </div><br>
+</div>
+<script>
+    function showHint(str) {
+        if (str.length == 0) {
+            document.getElementById("txtHint").innerHTML = "";
+            return;
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    alert(this.responseText);
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "server.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    }
+</script>
+<p id="txtHint"></p>
+</body>
+</html>
