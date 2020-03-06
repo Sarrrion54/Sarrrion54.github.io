@@ -4,7 +4,6 @@ app.controller('MyController', function ($scope, $http) {
         $scope.Groups = response.data;
     });
 });
-function Input()
-{
+function Input() {
     window.close();
 }
