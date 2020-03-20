@@ -1,0 +1,15 @@
+.sup_footer
+{
+    display: inline-flex;
+    background-image: url(Fon_footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}
