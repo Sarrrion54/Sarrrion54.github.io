@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="MyHeader.css">
-    <link rel="stylesheet" href="MyFooter.css">
+    <link rel="stylesheet" type="text/css" href="CSS/MyHeader.css">
+    <link rel="stylesheet" type="text/css" href="CSS/MyFooter.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Caveat|M+PLUS+Rounded+1c&display=swap"
         rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"> </script>
     <title>Южная Америка</title>
 </head>
 
 <body>
     <div class="header_1">
         <div class="header_2">
-            <img src="Google+.png" style="width: 30px; height: 30px;">
-            <img src="facebook.png" style="width: 30px; height: 30px; margin-left: 10px;">
+            <img src="CSS/Image/Google+.png" style="width: 30px; height: 30px;">
+            <img src="CSS/Image/facebook.png" style="width: 30px; height: 30px; margin-left: 10px;">
         </div>
         <div class="header_3">
             <span style="margin-left: 500px;">&#9742;</span>
@@ -26,7 +27,7 @@
         </div>
     </div>
     <header class="sup_header">
-        <img src="Logotip.jpg" width="170px" height="120px" style="transform: rotate(-10deg);">
+        <img src="CSS/Image/Logotip.jpg" width="170px" height="120px" style="transform: rotate(-10deg);">
         <p class="name_site">
             <span style="font-family: 'Caveat', cursive; font-size: 70px;">Удивительные
                 места</span><br>
@@ -36,17 +37,24 @@
     </header>
     <div class="sup_block">
         <div class="S_AM" style="margin-left: 10px; margin-top: 10px">
-            <canvas id="pointCanvas" width="800px" height="1200px"
-                style="border:2px solid black; margin-left: 1%;"></canvas>
-            <script src="Canvas.js"></script>
+            <img class="resize-image" src="CSS/Image/South_America2.jpg" alt="Image" >            
         </div>
-        <div class="main_information_SA" style="color: antiquewhite; font-size: 70px;">
-            тут будет информация о Южной Америке. Это шаблон главной страницы, как вы и говорили.
+        <div class="main_information_SA" style="color: black; font-size: 28px;">
+            <h1>Южная Америка</h1>
+            <span>Один из шести материков планеты Земля, расположенный на юге Западного полушария. Омывается на западе 
+                Тихим океаном, на востоке — Атлантическим, на севере — Карибским морем, которое является естественным рубежом между двумя Америками. 
+                Панамский перешеек на северо-западе материка соединяет Южную Америку с Северной.
+            </span><br>
+            <span>
+                Площадь континента — 17,84 млн км² (4-е место среди континентов; по площади лишь чуть больше России), 
+                население — 387 489 196 (2011 г.) человек (4-е место среди континентов).
+            </span>
         </div>
     </div>
     <footer style="color: antiquewhite; font-size: 20px;">
         тут будет футер. Но до него ещё далеко
     </footer>
+    <script src="JS/Canvas.js"></script>
 </body>
 
 </html>

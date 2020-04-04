@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Image/Fon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sup_block {
+    margin-bottom: 50px;
+    display: inline-flex;
+}
+
+.main_information_SA {
+    width: 650px;
+    height: 800px;
+    margin-left: 10px;
+    font-size: 23px;
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+}
+.resize-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.resize-container img {
+    display: block
+}
+
+.resize-container:hover img,
+.resize-container:active img {
+    outline: 2px dashed rgba(222,60,80,.9);
+}
+
+.resize-handle-ne,
+.resize-handle-se,
+.resize-handle-nw,
+.resize-handle-sw {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgba(222,60,80,.9);
+    z-index: 999;
+}
+
+.resize-handle-nw {
+    top: -5px;
+    left: -5px;
+    cursor: nw-resize;
+}
+
+.resize-handle-sw {
+    bottom: -5px;
+    left: -5px;
+    cursor: sw-resize;
+}
+
+.resize-handle-ne {
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+}
+
+.resize-handle-se {
+    bottom: -5px;
+    right: -5px;
+    cursor: se-resize;
+}
