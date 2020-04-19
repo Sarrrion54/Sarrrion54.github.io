@@ -1,0 +1,73 @@
+.menu a {
+    background-color: rgb(14, 49, 13);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid white;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+.sidebar {
+    border-bottom: 1px solid white;
+    position: absolute;
+    width: 200px;
+    margin: 20px;
+    z-index: 99;
+    display: none;
+}
+
+.menu a:hover {
+    background-color: rgb(45, 107, 43);
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a,
+.menu li .v_menu li:first-child a {
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a,
+.menu li .v_menu li:last-child a {
+    border-radius: 0 0 3px 3px;
+    border-bottom: 0;
+}
+
+.menu li .v_menu li a {
+    border-radius: 0;
+
+}
+
+.p_menu {
+    position: relative;
+
+}
+
+.v_menu {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: -9999px;
+    opacity: 0;
+    border-left: 10px solid transparent;
+    transition: 0.5s opacity;
+}
+
+.p_menu:hover .v_menu {
+    opacity: 1;
+    top: 0;
+}
+
+.p_menu::after {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #eee;
+    top: 1em;
+    right: 0.7em;
+    transition: 0.5s;
+}
+
+.p_menu:hover::after {
+    transform: scaleX(-1);
+}
