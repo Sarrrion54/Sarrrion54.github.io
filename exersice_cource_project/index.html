@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyApp">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,25 @@
     <link rel="stylesheet" type="text/css" href="CSS/MyHeader.css">
     <link rel="stylesheet" type="text/css" href="CSS/MyFooter.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style_menu.css">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Caveat|M+PLUS+Rounded+1c&display=swap"
         rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.0.0.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"> </script>
     <title>Южная Америка</title>
+
 </head>
 
 <body>
+    <div id="preloader_malc">
+        <div class="loading">
+            <p>Подождите, идет загрузка сайта ...</p>
+            <img src="CSS/Image/Loading.GIF" width="200px" height="100px">
+        </div>
+    </div>
     <div class="header_1">
         <div class="header_2">
-            <img src="CSS/Image/Google+.png" style="width: 30px; height: 30px;">
-            <img src="CSS/Image/facebook.png" style="width: 30px; height: 30px; margin-left: 10px;">
+            <img src="CSS/Image/Google+.png" style="width: 30px; height: 30px;" aria-describedby="sad" alt="Google+">
+            <img src="CSS/Image/facebook.png" style="width: 30px; height: 30px; margin-left: 10px;" alt="Facebook">
         </div>
         <div class="header_3">
             <span style="margin-left: 500px;">&#9742;</span>
@@ -27,7 +35,39 @@
         </div>
     </div>
     <header class="sup_header">
-        <img src="CSS/Image/Logotip.jpg" width="170px" height="120px" style="transform: rotate(-10deg);">
+        <div class="open_menu">
+            <img src="CSS/Image/Logotip.jpg" class="logotip" alt="Logotip">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li class="p_menu"><a href="#">Водоёмы</a>
+                        <ul class="v_menu">
+                            <li><a href="1">Река Амазонка</a></li>
+                            <li><a href="2">Водопад Анхель</a></li>
+                            <li><a href="3">Водопады Игуасу</a></li>
+                            <li><a href="4">Озеро Титикака</a></li>
+                            <li><a href="5">Солёные озёра Анд</a></li>
+                            <li><a href="6">Пантанал</a></li>
+                            <li><a href="7">Ледник Перито-Морено</a></li>
+                        </ul>
+                    </li>
+                    <li class="p_menu"><a href="#">Горы</a>
+                        <ul class="v_menu">
+                            <li><a href="8">Затеряные миры Венесуэлы</a></li>
+                            <li><a href="9">Горы Анды</a></li>
+                            <li><a href="10">Каньон Колка</a></li>
+                            <li><a href="11">Горы Пайне</a></li>
+                            <li><a href="12">Шпили Пенитентес</a></li>
+                        </ul>
+                    </li>
+                    <li class="p_menu"><a href="#">Пустыни</a>
+                        <ul class="v_menu">
+                            <li><a href="13">Пустыня Атакама</a></li>
+                            <li><a href="14">Пустыня Наска</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <p class="name_site">
             <span style="font-family: 'Caveat', cursive; font-size: 70px;">Удивительные
                 места</span><br>
@@ -36,25 +76,23 @@
         </p>
     </header>
     <div class="sup_block">
-        <div class="S_AM" style="margin-left: 10px; margin-top: 10px">
-            <img class="resize-image" src="CSS/Image/South_America2.jpg" alt="Image" >            
+        <div id="S_AM" style="margin-left: 10px;">
+            <div style="margin-left: 1%;">
+                <canvas id="pointCanvas"></canvas>
+            </div>
+            <script src="JS/XY.js"></script>
         </div>
-        <div class="main_information_SA" style="color: black; font-size: 28px;">
-            <h1>Южная Америка</h1>
-            <span>Один из шести материков планеты Земля, расположенный на юге Западного полушария. Омывается на западе 
-                Тихим океаном, на востоке — Атлантическим, на севере — Карибским морем, которое является естественным рубежом между двумя Америками. 
-                Панамский перешеек на северо-западе материка соединяет Южную Америку с Северной.
-            </span><br>
-            <span>
-                Площадь континента — 17,84 млн км² (4-е место среди континентов; по площади лишь чуть больше России), 
-                население — 387 489 196 (2011 г.) человек (4-е место среди континентов).
-            </span>
+
+        <div class="main_information" id="m_info">
+
         </div>
     </div>
     <footer style="color: antiquewhite; font-size: 20px;">
         тут будет футер. Но до него ещё далеко
+
     </footer>
-    <script src="JS/Canvas.js"></script>
+    </div>
+
 </body>
 
 </html>
